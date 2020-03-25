@@ -69,4 +69,9 @@ public class TestController {
         System.out.println(11);
 
     }
+    public void  hello2(){
+        System.out.println(11);
+
+    }
+
 }
