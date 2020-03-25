@@ -45,14 +45,5 @@ public class TestController {
     @ResponseBody
     public Book getByIdUser(@PathVariable("bookId") Integer bookId){
         return bookService.getById(bookId);
-    }
-
-    @RequestMapping("getById/{bookId}")
-    @ResponseBody
-    public Book getByIdUser1(@PathVariable("bookId") Integer bookId){
-        return bookService.getById(bookId);
-    }
-
-
-
+    
 }
