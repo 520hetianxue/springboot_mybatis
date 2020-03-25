@@ -24,43 +24,49 @@ public class TestController {
 
     @RequestMapping("springboot")
     @ResponseBody
-    public String  HelloSpringboot(){
-       return "3";
+    public String HelloSpringboot() {
+        return "3";
     }
 
     @RequestMapping("showDate")
     @ResponseBody
-    public Date showDate(Date date){
+    public Date showDate(Date date) {
         System.out.println(date);
         return date;
     }
 
     @RequestMapping("getById/{bookId}")
     @ResponseBody
-    public Book getById(@PathVariable("bookId") Integer bookId){
+    public Book getById(@PathVariable("bookId") Integer bookId) {
         return bookService.getById(bookId);
     }
 
     @RequestMapping("getById/{bookId}")
     @ResponseBody
-    public Book getByIdUser(@PathVariable("bookId") Integer bookId){
-        return bookService.getById(bookId)
+    public Book getByIdUser(@PathVariable("bookId") Integer bookId) {
+        return bookService.getById(bookId);
     }
 
     @RequestMapping("getById/{bookId}")
     @ResponseBody
-    public Book getByIdUser1(@PathVariable("bookId") Integer bookId){
+    public Book getByIdUser1(@PathVariable("bookId") Integer bookId) {
         return bookService.getById(bookId);
     }
 
 
     @RequestMapping("getById/{bookId}")
     @ResponseBody
-    public Book getByIdUser2(@PathVariable("bookId") Integer bookId){
+    public Book getByIdUser2(@PathVariable("bookId") Integer bookId) {
         return bookService.getById(bookId);
-    }@RequestMapping("getById/{bookId}")
+    }
+
+    @RequestMapping("getById/{bookId}")
     @ResponseBody
-    public Book getByIdUser3(@PathVariable("bookId") Integer bookId){
+    public Book getByIdUser3(@PathVariable("bookId") Integer bookId) {
         return bookService.getById(bookId);
+    }
+    public void  hello1(){
+        System.out.println(11);
+
     }
 }
