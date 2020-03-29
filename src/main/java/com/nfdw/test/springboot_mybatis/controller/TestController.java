@@ -41,37 +41,12 @@ public class TestController {
         return bookService.getById(bookId);
     }
 
-    @RequestMapping("getById/{bookId}")
-    @ResponseBody
-    public Book getByIdUser(@PathVariable("bookId") Integer bookId) {
-        return bookService.getById(bookId);
-    }
 
     @RequestMapping("getById/{bookId}")
     @ResponseBody
-    public Book getByIdUser1(@PathVariable("bookId") Integer bookId) {
+    public Book getById1(@PathVariable("bookId") Integer bookId) {
         return bookService.getById(bookId);
     }
 
-
-    @RequestMapping("getById/{bookId}")
-    @ResponseBody
-    public Book getByIdUser2(@PathVariable("bookId") Integer bookId) {
-        return bookService.getById(bookId);
-    }
-
-    @RequestMapping("getById/{bookId}")
-    @ResponseBody
-    public Book getByIdUser3(@PathVariable("bookId") Integer bookId) {
-        return bookService.getById(bookId);
-    }
-    public void  hello1(){
-        System.out.println(11);
-
-    }
-    public void  hello2(){
-        System.out.println(11);
-
-    }
 
 }

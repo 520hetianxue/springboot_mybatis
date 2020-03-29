@@ -10,4 +10,5 @@ import com.nfdw.test.springboot_mybatis.entity.Book;
 public interface IBookDao {
 
     Book getById();
+
 }
